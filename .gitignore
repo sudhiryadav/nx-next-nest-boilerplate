@@ -7,6 +7,8 @@ out-tsc
 
 # dependencies
 node_modules
+.pnp
+.pnp.js
 
 # IDEs and editors
 /.idea
@@ -29,8 +31,9 @@ node_modules
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 testem.log
 /typings
 
@@ -42,5 +45,19 @@ Thumbs.db
 .nx/workspace-data
 
 # Next.js
-.next
-out
+.next/
+out/
+build
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# testing
+coverage

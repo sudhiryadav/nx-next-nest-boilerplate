@@ -5,6 +5,15 @@
   "references": [
     {
       "path": "./apps/frontend"
+    },
+    {
+      "path": "./libs/ui"
+    },
+    {
+      "path": "./libs/utils"
+    },
+    {
+      "path": "./apps/backend"
     }
   ]
 }
