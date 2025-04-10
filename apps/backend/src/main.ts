@@ -1,21 +1,18 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import { bootstrap } from '@vendure/core';
+import { config } from './vendure-config';
 
-import { Logger } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app/app.module';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api';
-  app.setGlobalPrefix(globalPrefix);
-  const port = process.env.PORT || 3000;
-  await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
-  );
-}
-
-bootstrap();
+bootstrap(config)
+  .then(app => {
+    console.log(`
+      Vendure server is running!
+      Shop API: http://localhost:${config.apiOptions.port}/${config.apiOptions.shopApiPath}
+      Admin API: http://localhost:${config.apiOptions.port}/${config.apiOptions.adminApiPath}
+      Admin UI: http://localhost:${config.apiOptions.port}/admin
+    `);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
