@@ -22,11 +22,14 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "husky": "^9.1.7",
+    "remix": "^2.16.5",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.0"
   },
   "scripts": {
+    "prepare": "husky",
     "start:backend": "cd apps/backend && yarn start",
     "start:frontend": "cd apps/frontend && yarn dev",
     "install:all": "yarn install && cd apps/backend && yarn install && cd ../frontend && yarn install"

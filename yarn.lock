@@ -3474,6 +3474,11 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
+husky@^9.1.7:
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.1.7.tgz#d46a38035d101b46a70456a850ff4201344c0b2d"
+  integrity sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==
+
 i18next-fs-backend@^2.3.1:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.6.0.tgz#7b6b54c5ffc2a5073e47eda0673c002376fa1a3c"
@@ -5141,6 +5146,11 @@ relateurl@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==
+
+remix@^2.16.5:
+  version "2.16.5"
+  resolved "https://registry.yarnpkg.com/remix/-/remix-2.16.5.tgz#2be09438285185c86e6518ad49aeec9430ef6c47"
+  integrity sha512-hiJziB5gcISLvB6EY79sUlVdzAnrblcoLifDlBHXdf8xCAwGzAfqsPwCrNQRtQNFPFzqOLy6eLiFwYfmMzVAAg==
 
 require-directory@^2.1.1:
   version "2.1.1"
